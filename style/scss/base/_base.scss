@@ -1,0 +1,39 @@
+/* ==================================================
+ _base.scss
+ 全ページ共通のタグスタイル 定義
+================================================== */
+@use "../config/variables" as *;
+
+/* ==================================================
+ タグ共通設定
+================================================== */
+html {
+	overflow-y:scroll;
+}
+
+body {
+	width: 100%;
+	box-sizing: border-box;
+	background-color: $color_base;
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+	overflow: hidden;
+	border: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration:none;
+}
