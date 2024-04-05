@@ -27,7 +27,7 @@
 ================================================== */
 @use "config/variables";
 @use "config/function";
-@use "config/mediaquery";
+@use "config/mq";
 @use "config/font";
 /*
 @use "config/setting";
@@ -38,18 +38,17 @@
 ================================================== */
 @use "module/header";
 @use "module/footer";
+@use "module/global-nav";
 /* 
-@use "module/snav";
-@use "module/gnav";
-@use "module/share";
-@use "module/table";
+@use "module/sidenav";
 */
 
 /* ==================================================
  componentフォルダ
 ================================================== */
+@use "component/c-button";
 /*
-@use "component/button";
+@use "component/table";
 @use "component/link";
 @use "component/description";
 @use "component/card";

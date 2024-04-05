@@ -7,19 +7,7 @@
 @use "./variables" as *;
 
 /* ==================================================
- フォントベース
-================================================== */
-body {
-	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
-	line-height: 1.8;
-	letter-spacing: 0.1rem;
-	font-size: 100%;
-	-webkit-text-size-adjust: 100%;
-	color: $color-black;
-}
-
-/* ==================================================
- 見出しフォントサイズ
+ 見出しフォントサイズ(spサイズ ~ pcサイズ)
  h1: 24 ~ 28px;
  h2: 20 ~ 24px;
  h3: 18 ~ 20px;
@@ -32,7 +20,7 @@ $font_h4: responsiveFontSizeClamp(16,18,320,1280);
 
 
 /* ==================================================
- フォントサイズ
+ フォントサイズ(spサイズ ~ pcサイズ)
  x-small: 10 ~ 12px
  small: 12 ~ 14px
  medium: 14px ~ 16px

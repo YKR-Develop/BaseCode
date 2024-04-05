@@ -3,9 +3,36 @@
  ヘッダーのスタイル定義
 ================================================== */
 @use "../config/variables" as *;
+@use "../config/font" as *;
+@use "../config/mq" as *;
 @use "../mixin/mixin" as *;
-@use "../mixin/animation" as *;
 
 /* ==================================================
- 共通ヘッダー
+ ヘッダー
 ================================================== */
+.header {
+  height: 72px;
+  line-height: 72px;
+  background-color: $color_main;
+  color: $color_white;
+
+  &__inner {
+    @include maxWidth;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: $font_h1;
+    font-weight: 24px;
+  }
+
+  @include mq(tab) {
+    padding: 0 32px;
+  }
+
+  @include mq(sp) {
+    padding: 0 16px;
+  }
+}

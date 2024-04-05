@@ -3,6 +3,9 @@
  アニメーションスタイル 定義
 ================================================== */
 @use "sass:math";
+@use "../config/variables" as *;
+@use "../config/function" as *;
+@use "../config/font" as *;
 
 /* ==================================================
  animation基本設定

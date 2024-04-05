@@ -1,8 +1,15 @@
 /* ==================================================
- _about.scss
- Aboutページのスタイル定義
+ _global-nav.scss
+ グローバルナビゲーションのスタイル定義
 ================================================== */
 @use "../config/variables" as *;
 @use "../config/font" as *;
 @use "../config/mq" as *;
 @use "../mixin/mixin" as *;
+
+.global-nav {
+  &__list {
+    display: flex;
+    gap: 24px;
+  }
+}

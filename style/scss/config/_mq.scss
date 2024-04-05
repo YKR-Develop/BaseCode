@@ -1,8 +1,9 @@
 /* ==================================================
- _mediaquery.scss
+ _mq.scss
  メディアクエリ 定義
 ================================================== */
 @use "sass:math";
+@use "./variables" as *;
 
 /* ==================================================
  メディアクエリ 基本サイズ
@@ -21,20 +22,17 @@ $sp: 480px;
  }
 }
 ================================================== */
-@mixin pc {
-  @media screen and (max-width: ($pc)) {
-    @content;
-  }
-}
+$breakpoints: (
+  // 767px以下(スマホ)のモニタで適用
+  "sp": "screen and (max-width: 767px)",
+  // 768px以上のタブレットやモニタで適用
+  "tab": "screen and (max-width: 1024px)",
+  // 1025px以上のモニタで適用
+  "pc": "screen and (min-width: 1025px)",
+) !default;
 
-@mixin tab {
-  @media screen and (max-width: ($tab)) {
-    @content;
-  }
-}
-
-@mixin sp {
-  @media screen and (max-width: ($sp)) {
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
     @content;
   }
 }

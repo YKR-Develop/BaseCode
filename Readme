@@ -19,5 +19,5 @@ HTML / CSS(Sass) / JavaScriptのテンプレートファイルです。
     ],
 
 stylesheetフォルダ → cssフォルダ → style.css
-           　　　　　　　　　　　　→ scssフォルダ → style.scss → _variables.scss
+                   → scssフォルダ → style.scss → _variables.scss
 というディレクトリ構造になります。
