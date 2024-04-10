@@ -36,7 +36,7 @@
 /* ==================================================
  ※以下は他scssファイルでの定義方法
  @mixinで定義した引数のプロパティを書き換えるだけで個別にアニメーションを指定することができる
- @include animation(
+ @include bounce(
     $name: sk-bouncedelay;
 		$duration: 3s;
 		$timing-function: ease-in-out,
